@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/style.css">
+    <title>Café de la Place</title>
+
+</head>
+
+<body>
+    <div class="main">
+        <div class="titre">
+            <h1> GESTION DE STOCK : Café de la Place </h1>
+        </div>
+
+        <div class="container">
+            <div class="form">
+
+                <label>
+                    <p>Nom du produit</p>
+                    <input name="nom" id="nom" type="text" />
+                </label>
+                <label>
+                    <p>Quantité produit</p>
+                    <input name="quantite_de_produit" id="quantite_de_produit" type="number" />
+                </label>
+                <label>
+                    <p>Prix d'achat HT</p>
+                    <input name="prix_achat_ht" id="prix_achat_ht" type="number" />
+                </label>
+                <label>
+                    <p>Prix de vente HT</p>
+                    <input name="prix_vente_ht" id="prix_vente_ht" type="number" />
+                </label>
+                <label>
+                    <p>Type de produit</p>
+
+                    <select name="type" id="type_produit">
+                        <option value="Veuillez selectionner le type de produit"></option>
+                        <option id="alcool" value="Boisson alcoolisée">Boisson alcoolisée</option>
+                        <option value="Boisson non alcoolisée">Boisson non alcoolisée</option>
+                        <option value="Autre">Autre</option>
+
+                    </select>
+                </label>
+                <label>
+                    <p>Degré alcool</p>
+                    <input name="degré alcool" id="degré_alcool" type="number" />
+                </label>
+
+
+                <button id="save"> AJOUTER NOUVEAU PRODUIT </button>
+
+            </div>
+
+            <div id="liste_prduits">
+
+                <table id="liste">
+                    <thead>
+
+                        <th>Nom</th>
+                        <th>Quantité</th>
+                        <th>Prix d'achat HT</th>
+                        <th>Prix de vente HT</th>
+                        <th>Prix de vente TTC</th>
+                        <th>Marge</th>
+                        <th>Type(degré)</th>
+                        <th>Gérer l'inventaire</th>
+
+
+                    </thead>
+
+                    <tbody id="colonnes">
+
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+
+
+
+        <script type="text/javascript" src="./index.js"></script>
+</body>
+
+</html>
